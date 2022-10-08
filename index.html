@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="./js/main.js" ></script>
+  <link rel="icon" href="images/icon.png">
+  <title>pluse messenger</title>
+  <style>
+    body {
+      background-color: rgb(10, 0, 44);
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    .form-title {
+      color: #fff;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+    }
+    .caption-top {
+      color: rgb(73, 240, 229);
+      margin-bottom: 25px;
+    }
+    .caption-top.wrong {
+      color: rgb(189, 5, 5);
+    }
+    input[type="password"] {
+      margin-bottom: 1px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1.5px solid rgb(73, 240, 229);
+      color: #fff;
+    }
+    input[type="password"]:focus{
+     outline: none;
+    }
+    input[type="submit"] {
+      background-color: rgb(73, 240, 229);
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-transform:uppercase;
+    }
+    .caption-bottom {
+      opacity: 0;
+      color: rgb(189, 5, 5);
+      text-align: center;
+      margin-bottom: 19px;
+    }
+    .caption-bottom.active {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <form action="telegram.html">
+    <p class="form-title">Enter your local password</p>
+    <p class="caption-top">Your password</p>
+    <input id="password" type="password" required>
+    <p class="caption-bottom">Wrong Password, Try Again</p>
+    <input type="submit" value="submit">
+  </form>
+</body>
+</html>

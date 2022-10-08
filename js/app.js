@@ -20,27 +20,10 @@ let texTime = document.querySelector("li p")
 let formL = document.querySelector(".left form");
 let formR = document.querySelector(".right form");
 
-
-// // // // 
-// // // //   let li = `<li>${toDoList[i]}</li>`;
-// // // //   
-// // // //   ol.insertAdjacentHTML("beforeend", li)
-// // // // }
-// // // 
-// // 
-// 
-
 // date time
 let date = new Date();
 let hours = date.getHours();
 let minute = date.getMinutes();
-
-
-// left side
-// sendBtnL.addEventListener("click", ()=> {
-//   ulListL.insertAdjacentHTML("beforeend", pushWhiteL);
-//   ulListR.insertAdjacentHTML("beforeend", pushGreenL)
-// })
 
 iconBtnL.addEventListener("click", ()=> {
     iconLeft.classList.toggle("active");

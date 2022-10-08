@@ -41,7 +41,7 @@ input:focus {
   display: flex;
   justify-content:space-around;
   align-items: center;
-  height: 80px;
+  height: 10vh;
   background-color: rgba(203, 203, 203, 0.8);
 }
 .user h4 {
@@ -60,7 +60,8 @@ input:focus {
   height: 60px;
 }
 ul {
-  height: calc(100vh - 60px - 90px);
+  height: calc(100vh - 21vh);
+  padding: 10px 0;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -101,7 +102,7 @@ form {
   position: relative;
   padding-bottom: 10px;
   justify-content: space-evenly;
-  height: 50px;
+  height: 7vh;
   width: 95%;
   margin: 0 auto;
   display: flex;
